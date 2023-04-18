@@ -1,4 +1,4 @@
-package com.April.jump;
+package com.april.jump;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

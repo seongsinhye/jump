@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.april.jump.mapper.MainMapper">
+    <select id="getUser" resultType="user">
+        select * from user limit 1;
+    </select>
+    <select id="getUsers" resultType="user">
+        select * from user;
+    </select>
+    <insert id="postUser" parameterType="user">
+        INSERT INTO study.`user`
+        (id, pw)
+        VALUES(#{id}, #{pw});
+    </insert>
+    <update id="putUser" parameterType="user">
+        UPDATE study.`user`
+        SET id=#{id}, pw=#{pw};
+    </update>
+    <delete id="deleteUser" parameterType="string">
+        DELETE FROM study.`user`
+        WHERE id=#{id};
+    </delete>
+</mapper>
