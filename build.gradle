@@ -4,7 +4,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.1'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
-//그룹명만 수정해서 사용!!
+
 group = 'com.April'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
